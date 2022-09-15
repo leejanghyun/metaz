@@ -1,0 +1,47 @@
+{
+  "name": "@foo-bar-project/react-test",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts,.tsx ./",
+    "lint:fix": "eslint --fix --ext .js,.ts,.tsx ./",
+    "build:spa": "vite build --outDir dist/spa",
+    "dev:spa": "vite --host",
+    "generate-pwa-icons": "npx pwa-asset-generator public/favicon.svg public/images/pwa --manifest resource/manifest.json --path-override /images/pwa"
+  },
+  "dependencies": {
+    "@foo-bar-project/react-hooks": "workspace:*",
+    "@foo-bar-project/react-ui": "workspace:*",
+    "framer-motion": "^6.3.11",
+    "graphql": "^16.3.0",
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@reduxjs/toolkit": "^1.8.1",
+    "@types/react-router-dom": "^5.3.3",
+    "axios": "^0.26.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "redux-thunk": "^2.4.1",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^5.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^1.3.2",
+    "autoprefixer": "^10.4.7",
+    "daisyui": "^2.15.4",
+    "dotenv": "^16.0.1",
+    "markdown-it-link-attributes": "^4.0.0",
+    "markdown-it-prism": "^2.2.3",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.3",
+    "typescript": "^4.6.2",
+    "unplugin-auto-import": "^0.8.5",
+    "unplugin-icons": "^0.14.3",
+    "vite": "^2.9.12",
+    "vite-plugin-imp": "^2.1.8",
+    "vite-plugin-md": "^0.13.1",
+    "vite-plugin-pwa": "^0.12.0",
+    "vite-tsconfig-paths": "^3.5.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@foo-bar-project/react-hooks",
+  "version": "1.0.0",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/index.umd.js",
+  "jsdelivr": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "prepare": "vite build",
+    "test-dev": "vite --config vite.config.preview.ts"
+  },
+  "dependencies": {
+    "react": "^18"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/react": "^18.0.9",
+    "@vitejs/plugin-react": "^1.2.0",
+    "lodash": "^4.17.21",
+    "react-dom": "^18",
+    "rollup": "*",
+    "rollup-plugin-node-externals": "^4.0.0",
+    "typescript": "^4.6.2",
+    "vite": "^2.9.12",
+    "vite-plugin-dts": "^1.2.0",
+    "vite-tsconfig-paths": "^3.5.0"
+  }
+}

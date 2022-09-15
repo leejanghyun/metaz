@@ -1,0 +1,45 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "ESNext",
+    "module": "ESNext",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "src/*": [
+        "src/*"
+      ],
+      "components/*": [
+        "src/components/*"
+      ],
+      "pages/*": [
+        "src/pages/*"
+      ],
+      "hooks/*": [
+        "src/hooks/*"
+      ],
+      "layouts/*": [
+        "src/layouts/*"
+      ],
+      "store/*": [
+        "src/store/*"
+      ]
+    }
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "target": "ES2015",
+      "module": "CommonJS"
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "auto-imports.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+
+}

@@ -1,0 +1,2 @@
+# Type graphql Test
+
